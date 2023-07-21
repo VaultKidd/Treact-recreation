@@ -67,6 +67,7 @@ nav{
 .logo__text{
     font-size: 24px;
     color: #243e63;
+    font-weight: bold;
 }
 
 .nav__links{
@@ -79,6 +80,7 @@ nav{
     font-weight: 600;
     margin: 0 24px;
     padding: 12px 0 3px 0;
+    text-decoration-color: rgba(0, 0, 0, 0)
 }
 
 .nav__link:nth-last-child(2){
@@ -90,7 +92,7 @@ nav{
     color: #243e63;
 }
 
-.nav__link--text:hover{
+.nav__link--text:hover:not(:last-child){
     color:#6415FF;
 }
 
@@ -106,10 +108,13 @@ nav{
     background: #5212d3;
 }
 
-.nav__link:hover:not(:last-child) {
-    border-bottom: 3px solid #6415FF;
-    padding-bottom: 0px;
-    transition: all 40ms ease;
+.nav__link:hover:not(:last-child){
+    color:#6415FF;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #6415FF;
+    text-underline-offset: 6px;
+    transition: all 300ms ease;
 }
 
 /*
@@ -145,22 +150,37 @@ LANDING
     transition: all 350ms ease;
 }
 
-.email__input{
+.email__input:hover{
     border: 3px solid rgba(0, 0, 0, 0.5);
 }
 
 .email__input:focus{
     border: 3px solid rgba(100, 21, 255, 1);
+    transition: all 350ms ease;
+    outline: none;
 }
 
 .landing__email-input--button{
-position: absolute;
-right: 7px;
-top: 7px;
-background: #6415FF;
-border-radius: 50px;
-font-size: 16px;
-padding: 16px;
-border: none;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    background: #6415FF;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 16px;
+    border: none;
 }
 
+.customers__title{
+    margin-top: 80px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #a0aec0;
+}
+
+.customers__img{
+    margin-top: 16px;
+    padding-right: 128px;
+    left: 0;
+    max-width: 533.33px;
+}
