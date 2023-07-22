@@ -13,6 +13,18 @@
     margin: 0 auto;
 }
 
+.row__landing{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    line-height: 1.5;
+    color:#243e63;
+}
+
 ul{
     list-style: none;
 }
@@ -36,6 +48,7 @@ height: 100vh;
 button:active{
     transform: translateY(1px);
 }
+
 
 
 /* 
@@ -80,7 +93,7 @@ nav{
     font-weight: 600;
     margin: 0 24px;
     padding: 12px 0 3px 0;
-    text-decoration-color: rgba(0, 0, 0, 0)
+    text-decoration-color: rgba(0, 0, 0, 0);
 }
 
 .nav__link:nth-last-child(2){
@@ -114,7 +127,7 @@ nav{
     text-decoration-thickness: 3px;
     text-decoration-color: #6415FF;
     text-underline-offset: 6px;
-    transition: all 300ms ease;
+    transition: all 300ms ease-in-out;
 }
 
 /*
@@ -123,7 +136,7 @@ LANDING
 
 */
 
-.landing{
+.landing__intro{
     width: 40%;
 }
 
@@ -167,8 +180,10 @@ LANDING
     background: #6415FF;
     border-radius: 50px;
     font-size: 16px;
+    font-weight: bold;
     padding: 16px;
     border: none;
+    cursor: pointer;
 }
 
 .customers__title{
@@ -183,4 +198,72 @@ LANDING
     padding-right: 128px;
     left: 0;
     max-width: 533.33px;
+    opacity: 0.5;
+}
+
+.landing__img--wrapper{
+    width: 60%;
+
+}
+
+.landing__img{
+    max-width: 750px;
+}
+
+/*
+
+FEATURES
+
+*/
+
+.features__intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__intro--title{
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+}
+
+.features__intro--heading{
+    font-size: 48px;
+    color:#243e63;
+    font-weight: bold;
+}
+
+.features__intro--para{
+    font-size: 18px;
+    color: #7c8ba1;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.feature__title{
+    font-size: 24px;
+}
+
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.feature{
+    display: flex;
+    width: 33%;
+}
+
+.feature__img--wrapper{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.feature__text{
+    display: flex;
+    flex-direction: column;
 }
