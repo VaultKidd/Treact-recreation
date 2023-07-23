@@ -9,7 +9,7 @@
 }
 
 .container{
-    padding: 80px 0;
+    padding: 96px 0;
 }
 
 .row{
@@ -48,6 +48,11 @@ a{
 
 #landing{
 height: 100vh;
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.1);
+    font-weight: 600;
 }
 
 button{
@@ -105,6 +110,7 @@ nav{
 .nav__links{
     display: flex; 
     position: relative;
+    align-items: center;
 }
 
 .nav__link{
@@ -113,6 +119,7 @@ nav{
     margin: 0 24px;
     padding: 12px 0 3px 0;
     text-decoration-color: rgba(0, 0, 0, 0);
+    
 }
 
 .nav__link:nth-last-child(2){
@@ -122,28 +129,24 @@ nav{
 
 .nav__link--text{
     color: #243e63;
+    transition: color 300ms ease;
 }
 
-.nav__link--text:hover:not(:last-child){
-    color:#6415FF;
+.nav__link--text:hover{
+    color: #6415FF;
 }
 
-.nav__link--purple{
-    background: #6415FF;
-    border-radius: 20px;
-    color: white;
-    padding: 12px 32px;
-    transition: all 300ms ease;
+.nav__button{
+    transition: background-color 300ms ease;
 }
 
-.nav__link--purple:hover{
-    background: #5212d3;
+.nav__button:hover{
+    background-color:#5212d3;
 }
 
 .nav__link:hover:not(:last-child){
-    color:#6415FF;
     text-decoration: underline;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 2px;
     text-decoration-color: #6415FF;
     text-underline-offset: 6px;
     transition: all 300ms ease-in-out;
@@ -206,6 +209,11 @@ LANDING
     padding: 16px;
     border: none;
     cursor: pointer;
+    transition: background-color 300ms ease;
+}
+
+.landing__email-input--button:hover{
+    background: #5212d3;
 }
 
 .customers__title{
@@ -236,6 +244,10 @@ LANDING
 FEATURES
 
 */
+
+#features{
+
+}
 
 .quality__row{
     display: flex;
@@ -276,7 +288,6 @@ FEATURES
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
     margin-top: 40px;
 }
 
@@ -316,15 +327,15 @@ QUALITY
 
 */
 
-.quality{
-    padding: 80px 0;
+#quality{
+    padding: 96px 0;
 }
 
 .quality__intro{
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding-right: 16px;
+    padding-right: 40px;
 }
 
 .quality__intro--title{
@@ -349,7 +360,7 @@ QUALITY
 
 .quality__button{
 margin-top: 32px;
-transition: all 300ms ease;
+transition: background-color 300ms ease;
 }
 
 .quality__button:hover{
