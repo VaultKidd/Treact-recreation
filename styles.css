@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 *{
     font-family: 'inter', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-rendering: auto;
+}
+
+.container{
+    padding: 80px 0;
 }
 
 .row{
@@ -21,7 +26,7 @@
 }
 
 h1, h2, h3, h4, h5, h6, p{
-    line-height: 1.5;
+    line-height: 1.25;
     color:#243e63;
 }
 
@@ -43,6 +48,18 @@ a{
 
 #landing{
 height: 100vh;
+}
+
+button{
+    max-width: 142px;
+    color: #f7fafc;
+    background-color:#6415FF;
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
 }
 
 button:active{
@@ -74,13 +91,15 @@ nav{
 
 .logo__img{
     max-width: 40px;
-    margin: 0 12px 0 0;
+    margin-right: 12px;
 }
 
 .logo__text{
     font-size: 24px;
     color: #243e63;
-    font-weight: bold;
+    font-weight: 900;
+    max-width: 81px;
+    letter-spacing: 0.75px;
 }
 
 .nav__links{
@@ -142,6 +161,8 @@ LANDING
 
 .landing__title{
     font-size: 48px;
+    color: #1a202c;
+    text-shadow: black 2px 2px 2px 2px;
 }
 
 .landing__para{
@@ -174,6 +195,7 @@ LANDING
 }
 
 .landing__email-input--button{
+    color: #f7fafc;
     position: absolute;
     right: 7px;
     top: 7px;
@@ -203,11 +225,10 @@ LANDING
 
 .landing__img--wrapper{
     width: 60%;
-
 }
 
 .landing__img{
-    max-width: 750px;
+    width: 100%;
 }
 
 /*
@@ -215,6 +236,10 @@ LANDING
 FEATURES
 
 */
+
+.quality__row{
+    display: flex;
+}
 
 .features__intro{
     display: flex;
@@ -231,7 +256,8 @@ FEATURES
 .features__intro--heading{
     font-size: 48px;
     color:#243e63;
-    font-weight: bold;
+    font-weight: 900;
+    padding-bottom: 8px;
 }
 
 .features__intro--para{
@@ -239,6 +265,7 @@ FEATURES
     color: #7c8ba1;
     font-weight: 500;
     margin-top: 16px;
+    line-height: 1.5;
 }
 
 .feature__title{
@@ -250,20 +277,90 @@ FEATURES
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    margin-top: 40px;
 }
+
+
 
 .feature{
     display: flex;
-    width: 33%;
+    width: 30%;
+    padding: 32px 8px;
+    margin: 0 16px;
 }
 
 .feature__img--wrapper{
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 50%;
+    max-height: 66px;
 }
 
 .feature__text{
     display: flex;
     flex-direction: column;
+    margin: 8px 0 0 18px;
+    font-weight: 500;
+    
+}
+
+.feature__para{
+    padding: 16px 0 0 0;
+    line-height: 2;
+    color: #7c8ba1;
+}
+
+/*
+
+QUALITY
+
+*/
+
+.quality{
+    padding: 80px 0;
+}
+
+.quality__intro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 16px;
+}
+
+.quality__intro--title{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.quality__intro--heading{
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 16px;
+    letter-spacing: 1px;
+}
+
+.quality__intro--para{
+    color: #7c8ba1;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.quality__button{
+margin-top: 32px;
+transition: all 300ms ease;
+}
+
+.quality__button:hover{
+    background: #5212d3;
+}
+
+.quality__img--wrapper{
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.quality__img{
+    width: 100%;
 }
