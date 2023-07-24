@@ -27,7 +27,17 @@
 
 h1, h2, h3, h4, h5, h6, p{
     line-height: 1.25;
+}
+
+h2{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+h3{
+    font-size: 48px;
     color:#243e63;
+    font-weight: 900;
 }
 
 ul{
@@ -165,7 +175,6 @@ LANDING
 .landing__title{
     font-size: 48px;
     color: #1a202c;
-    text-shadow: black 2px 2px 2px 2px;
 }
 
 .landing__para{
@@ -176,6 +185,7 @@ LANDING
 
 .landing__email-input{
     position: relative;
+    width: 90%;
 }
 
 .email__input{
@@ -210,6 +220,7 @@ LANDING
     border: none;
     cursor: pointer;
     transition: background-color 300ms ease;
+    width: 100%;
 }
 
 .landing__email-input--button:hover{
@@ -245,14 +256,6 @@ FEATURES
 
 */
 
-#features{
-
-}
-
-.quality__row{
-    display: flex;
-}
-
 .features__intro{
     display: flex;
     flex-direction: column;
@@ -260,15 +263,10 @@ FEATURES
 }
 
 .features__intro--title{
-    font-size: 16px;
-    letter-spacing: 1.5px;
     margin-bottom: 16px;
 }
 
 .features__intro--heading{
-    font-size: 48px;
-    color:#243e63;
-    font-weight: 900;
     padding-bottom: 8px;
 }
 
@@ -290,8 +288,6 @@ FEATURES
     justify-content: center;
     margin-top: 40px;
 }
-
-
 
 .feature{
     display: flex;
@@ -331,16 +327,15 @@ QUALITY
     padding: 96px 0;
 }
 
+.quality__row{
+    display: flex;
+}
+
 .quality__intro{
     width: 50%;
     display: flex;
     flex-direction: column;
     padding-right: 40px;
-}
-
-.quality__intro--title{
-    font-size: 16px;
-    letter-spacing: 2px;
 }
 
 .quality__intro--heading{
@@ -374,4 +369,67 @@ transition: background-color 300ms ease;
 
 .quality__img{
     width: 100%;
+}
+
+/*
+
+STEPS
+
+*/
+
+#steps{
+    padding: 96px 0;
+}
+
+.steps__row{
+    display: flex;
+}
+
+.steps__img--wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.laptop__img{
+    width: 90%;
+}
+
+.steps__intro{
+    width: 50%;
+}
+
+.steps__list{
+    display: flex;
+    flex-direction: column;
+}
+
+.step{
+    display: flex;
+    width: 60%;
+    padding-top: 32px;
+}
+
+.step__number{
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.step__info{
+    padding-left: 24px;
+}
+
+.step__title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #243e63;
+}
+
+.step__para{
+    font-size: 14px;
+    color: #718096;
+    padding-top: 12px;
 }
