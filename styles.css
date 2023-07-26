@@ -38,6 +38,7 @@ h3{
     font-size: 48px;
     color:#243e63;
     font-weight: 900;
+    margin-top: 16px;
 }
 
 ul{
@@ -80,6 +81,8 @@ button{
 button:active{
     transform: translateY(1px);
 }
+
+
 
 
 
@@ -335,7 +338,8 @@ QUALITY
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding-right: 40px;
+    margin-right: 40px;
+    padding: 32px 0;
 }
 
 .quality__intro--heading{
@@ -364,11 +368,15 @@ transition: background-color 300ms ease;
 
 .quality__img--wrapper{
     width: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quality__img{
     width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: 40px;
 }
 
 /*
@@ -394,11 +402,13 @@ STEPS
 }
 
 .laptop__img{
-    width: 90%;
+    width: 100%;
 }
 
 .steps__intro{
     width: 50%;
+    padding: 32px 0;
+    margin-left: 60px;
 }
 
 .steps__list{
@@ -432,4 +442,96 @@ STEPS
     font-size: 14px;
     color: #718096;
     padding-top: 12px;
+    line-height: 2;
+}
+
+/*
+
+VALUES
+
+*/
+
+#values{
+    padding: 96px 0;
+}
+
+.values__row{
+    display: flex;
+}
+
+.values__intro{
+    width: 50%;
+    padding: 32px 0;
+    margin-right: 60px;
+}
+
+.values__para{
+    margin-top: 32px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #7c8ba1;
+    line-height: 1.5;
+}
+
+.values__list{
+    display: flex;
+}
+
+.value{
+    margin: 32px 32px 0 0;
+}
+
+.value__top{
+    display: flex;
+    align-items: center;
+}
+
+.fa-dollar-sign{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    font-size: 20px;
+    color: green;
+    background: #9ae6b4;
+    border-radius: 50%;
+    width: 36px;
+}
+
+.fa-suitcase{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    font-size: 20px;
+    color: maroon;
+    background: #feb2b2;
+    border-radius: 50%;
+    width: 36px;
+}
+
+.value__title{
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #243e63;
+}
+
+.value__para{
+    margin-top: 16px;
+    color: #718096;
+    line-height: 1.6;
+}
+
+.values__button{
+    margin-top: 48px;
+}
+
+.values__img--wrapper{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.values__img{
+    width: 100%;
 }
