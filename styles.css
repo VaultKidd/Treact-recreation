@@ -49,10 +49,6 @@ a{
     text-decoration: none;
 }
 
-.text__white{
-    color: white;
-}
-
 .text__purple{
     color: #6415FF
 }
@@ -534,4 +530,106 @@ VALUES
 
 .values__img{
     width: 100%;
+}
+
+/*
+
+PRICING
+
+*/
+
+.pricing__intro{
+    text-align: center;
+}
+
+.pricing__para{
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #7c8ba1;
+    line-height: 1.5;
+}
+
+.plans{
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan{
+    width: calc(100%/3);
+    margin: 64px 32px 0 0;
+    padding: 8px 32px 0;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+
+.plan__personal{
+    border-top: 7px solid rgb(56, 178, 172);
+    border-top-style: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 0;
+}
+
+.plan__title{
+    color: #1a202c;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.plan__price{
+    color: #1a202c;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+.plan__duration{
+    color: #a0aec0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.plan__middle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 32px;
+}
+
+.plan__target{
+    color: #1a202c;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.plan__feature{
+    color: #718096;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.text__white{
+    color: #f7fafc;
+}
+
+.plan__bottom{
+    padding: 32px 64px;
+}
+
+.button__personal{
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__bottom{
+    display: flex;
+    justify-content: center;
 }
