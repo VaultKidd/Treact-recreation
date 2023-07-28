@@ -507,7 +507,7 @@ VALUES
 .value__title{
     margin-left: 12px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     color: #243e63;
 }
 
@@ -538,6 +538,11 @@ PRICING
 
 */
 
+#pricing{
+    margin: 0 auto;
+    padding: 96px 0;
+}
+
 .pricing__intro{
     text-align: center;
 }
@@ -552,7 +557,8 @@ PRICING
 
 .plans{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
 }
 
 .plan{
@@ -561,13 +567,34 @@ PRICING
     padding: 8px 32px 0;
     display: flex;
     flex-direction: column;
-    border: 2px solid gray;
+    position: relative;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     border-radius: 8px;
 }
 
-.plan__personal{
-    border-top: 7px solid rgb(56, 178, 172);
-    border-top-style: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+.plan__personal--banner{
+    position: absolute;
+    height: 8px;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__business{
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+.plan__enterprise--banner{
+    position: absolute;
+    height: 8px;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
 .plan__top{
@@ -602,6 +629,15 @@ PRICING
     flex-direction: column;
     text-align: center;
     padding: 32px;
+    border-top: 2px solid rgb(226, 232, 240);
+    border-bottom: 2px solid rgb(226, 232, 240);
+    margin-left: -32px;
+    margin-right: -32px;
+}
+
+.plan__middle--business{
+    border-top: 2px solid rgb(102, 126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);
 }
 
 .plan__target{
@@ -627,6 +663,13 @@ PRICING
 
 .button__personal{
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+.button__business{
+    background: #f7fafc;
+    color: #6415FF;
+}
+.button__enterprise{
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
 .plan__bottom{
