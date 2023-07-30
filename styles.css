@@ -663,14 +663,30 @@ PRICING
 
 .button__personal{
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    transition: all 400ms ease;
 }
+
 .button__business{
     background: #f7fafc;
     color: #6415FF;
+    transition: all 400ms ease;
 }
+
+.button__business:hover{
+    background: rgb(220, 220, 220);
+}
+
 .button__enterprise{
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    transition: all 400ms ease;
 }
+
+.button__pricing:hover{
+    transform: translateY(-1px) translateX(1px);
+    box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.2);
+
+}
+
 
 .plan__bottom{
     display: flex;
