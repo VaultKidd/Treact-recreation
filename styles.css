@@ -63,7 +63,7 @@ height: 100vh;
 }
 
 button{
-    max-width: 142px;
+    
     color: #f7fafc;
     background-color:#6415FF;
     padding: 12px 32px;
@@ -220,6 +220,7 @@ LANDING
     cursor: pointer;
     transition: background-color 300ms ease;
     width: 100%;
+    max-width: 142px;
 }
 
 .landing__email-input--button:hover{
@@ -356,6 +357,7 @@ QUALITY
 .quality__button{
 margin-top: 32px;
 transition: background-color 300ms ease;
+max-width: 142px;
 }
 
 .quality__button:hover{
@@ -799,6 +801,7 @@ TESTIMONIALS
     padding: 16px;
     margin: 0 12px;
     border-radius: 50%;
+
     
 }
 
@@ -806,4 +809,102 @@ TESTIMONIALS
     color: #6415FF;
     width: 16px;
     height: 16px;
+}
+
+.divider{
+    border: 1px  solid rgb(226, 232, 240);
+    border-width: 1px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    height: 24px
+}
+
+/*
+
+BANNER
+
+*/
+
+#banner{
+    padding: 96px 0;
+}
+
+.banner__row{
+    display: flex;
+}
+
+.banner{
+    width: 100%;
+    background-color: rgb(100, 21, 255);
+    padding: 96px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner__info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner__text{
+    color: #f7fafc;
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 40%;
+    line-height: 1.5;
+    z-index: 1;
+}
+
+.banner__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    margin-right: 48px;
+}
+
+.banner__button--start{
+    background-color: #f56565;
+    font-size: 16px;
+    padding: 20px 40px;
+    margin-right: 24px;
+    transition: all 250ms ease;
+    box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.banner__button--start:hover{
+    background-color:#e44545
+}
+
+.banner__button--contact{
+    border: 0.5px solid #f7fafc;
+    font-size: 16px;
+    padding: 20px 40px;
+    transition: all 250ms ease;
+}
+
+.banner__button--contact:hover{
+    color: rgb(100, 21, 255);
+    background-color: #f7fafc;
+}
+
+.circle{
+    color: #450fb1;
+    opacity: 0.5;
+    position: absolute;
+    width: 320px;
+    
+}
+
+.circle__left{
+    transform: translateX(-550px) translateY(100px);
+}
+
+.circle__right{
+    transform: translateX(500px) translateY(-200px)
 }
