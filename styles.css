@@ -335,7 +335,8 @@ QUALITY
 
 .quality__row{
     display: flex;
-    margin: 0 auto;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 .quality__intro{
@@ -973,6 +974,16 @@ FOOTER
     font-size: 14px;
     font-weight: 500;
     padding: 8px 0;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    
+}
+
+.footer__link:hover{
+    text-decoration-color: #f7fafc;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+    transition: all 300ms ease-in-out;
 }
 
 .footer__info{
@@ -1017,6 +1028,7 @@ FOOTER
     margin-right: 16px;
     background: #f7fafc;
     border-radius: 50%;
+    transition: all 250ms ease;
 }
 
 .fab{
@@ -1024,3 +1036,13 @@ FOOTER
     display: flex;
     justify-content: center;
 }
+
+.footer__social--link:hover{
+    background-color: #9ca2ad;
+}
+
+/*
+
+ANIMATIONS
+
+*/
