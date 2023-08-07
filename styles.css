@@ -1041,8 +1041,123 @@ FOOTER
     background-color: #9ca2ad;
 }
 
-/*
 
-ANIMATIONS
 
-*/
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */ 
+
+@media (max-width: 768px){
+
+    .nav__links{
+        display: none;
+    }
+
+    .row__landing{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .landing__title{
+        font-size: 32px;
+    }
+
+    .landing__para{
+        font-size: 16px;
+        padding: 16px 40px;
+        text-align: center;
+    }
+    
+    .landing__intro{
+        width: 90%;
+        text-align: center;
+    }
+
+    .landing__email-input{
+        display: flex;
+        margin: 0 auto;
+        max-width: 60%;
+    }
+
+    .customers__img{
+        padding: 0;
+    }
+
+    .landing__img--wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 0;
+    }
+
+    .landing__img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .features__intro--heading{
+        font-size: 32px;
+    }
+
+    .features__intro--para{
+        font-size: 16px;
+    }
+
+    .feature{
+        width: calc(100%/2.5);
+    }
+
+    .quality__row{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quality__intro{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quality__intro--title{
+        text-align: center;
+    }
+
+    .quality__intro--heading{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .quality__intro--para{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .quality__img--wrapper{
+        width: 80%;
+    }
+
+    .steps__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .steps__img--wrapper{
+
+    }
+
+    .steps__dots{
+        transform: translateY(105px) translateX(260px) scale(0.6)
+    }
+
+    .steps__intro{
+        padding-top: 40px;
+        text-align: center;
+    }
+}
