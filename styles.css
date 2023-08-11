@@ -86,8 +86,8 @@ BURGER MENU
 
 .btn__menu{
     background-color: transparent;
-    font-size: 40px;
     text-align: center;
+    font-size: 24px;
     border: none;
     color: #7342d6;
     display: none;
@@ -95,11 +95,10 @@ BURGER MENU
 
 .menu__backdrop{
     position: absolute;
-    background-color: #242424;
+    background-color: white;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     z-index: 3;
     display: flex;
     justify-content: center;
@@ -107,6 +106,9 @@ BURGER MENU
     transition: all 300ms ease ;
     opacity: 0;
     visibility: hidden;
+    margin: 24px;
+    border: 1px solid #e2dddd;
+    border-radius: 10px;
 }
 
 .menu--open .menu__backdrop{
@@ -120,7 +122,7 @@ BURGER MENU
 }
 
 .menu__list{
-    padding: 32px 0;
+    padding: 16px 0;
 }
 
 .menu__links{
@@ -130,8 +132,30 @@ BURGER MENU
 }
 
 .menu__link{
+    color: #020102;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 300ms ease;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+}
+
+.menu__link:hover{
     color: #6415FF;
-    font-size: 40px;
+    text-decoration-color: #6415FF;
+    
+}
+
+.menu__button{
+    margin: 24px 0;
+    transform: scale(1.25);
+    transition: background-color 300ms ease;
+}
+
+.menu__button:hover{
+    background-color:#5212d3;
 }
 
 .btn__menu--close{
@@ -189,8 +213,11 @@ nav{
     font-weight: 600;
     margin: 0 24px;
     padding: 12px 0 3px 0;
-    text-decoration-color: rgba(0, 0, 0, 0);
-    
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+    transition: all 300ms ease;
 }
 
 .nav__link:nth-last-child(2){
@@ -220,7 +247,7 @@ nav{
     text-decoration-thickness: 2px;
     text-decoration-color: #6415FF;
     text-underline-offset: 6px;
-    transition: all 300ms ease-in-out;
+    
 }
 
 /*
@@ -1110,6 +1137,10 @@ FOOTER
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */ 
 
 @media (max-width: 768px){
+
+    nav{
+        padding: 24px;
+    }
 
     .nav__links{
         display: none;
