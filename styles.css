@@ -1140,6 +1140,10 @@ FOOTER
 
 @media (max-width: 768px){
 
+    .row{
+        padding: 0 24px;
+    }
+
     nav{
         padding: 24px;
     }
@@ -1247,7 +1251,7 @@ FOOTER
     }
 
     .quality__dots{
-        transform: translateX(290px) translateY(776px);
+        display: none;
     }
 
     .steps__row{
@@ -1262,7 +1266,7 @@ FOOTER
     }
 
     .steps__dots{
-        transform: translateY(340px) translateX(5px) scale(0.6)
+        display: none;
     }
 
     .steps__intro{
@@ -1427,6 +1431,7 @@ FOOTER
 
 @media (max-width: 576px){
 
+
     .container{
         padding: 30px 0;
     }
@@ -1490,6 +1495,7 @@ FOOTER
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .feature{
@@ -1497,8 +1503,9 @@ FOOTER
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 100%;
+        width: 100%;
         text-align: center;
+        margin: 0;
     }
 
     .feature__img--wrapper{
@@ -1525,7 +1532,7 @@ FOOTER
     }
 
     .quality__dots{
-        transform: translateX(210px) translateY(-453px) scale(0.7);
+        display: none;
     }
 
     .steps__row{
@@ -1533,6 +1540,10 @@ FOOTER
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .steps__intro{
+        width: 100%;
     }
 
     .steps__img--wrapper{
@@ -1548,7 +1559,7 @@ FOOTER
     }
 
     .steps__dots{
-        transform: translateY(275px) scale(0.6);
+        display: none;
     }
 
     .steps__intro{
@@ -1557,6 +1568,39 @@ FOOTER
 
     .values__row{
         display: flex;
+    }
+
+    .values__intro{
+        width: 100%;
+    }
+
+    .plan{
+        width: 100%;
+    }
+
+    .test__intro{
+        width: 100%;
+    }
+
+    .review__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__link{
+        text-align: center;
+    }
+
+    .link__column{
+        width: calc(100%/3);
     }
 
     .footer__info{
